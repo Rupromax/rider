@@ -189,19 +189,129 @@ section {
 .footer .credit span {
     color: rgb(0, 169, 169);
 }
-/* 手機 */
-/* 第一區h */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-    background-color: rgb(255, 118, 73);
-    /* box-shadow: 10px 1rem 1rem black; */
-    opacity: 0.9;
+
+/* 手機版響應式設計 */
+@media (max-width: 768px) {
+    /* 調整標題字體大小 */
+    .heading {
+        font-size: 35px;
+        padding: 20px;
+    }
+    
+    .heading span {
+        font-size: 35px;
+    }
+    
+    /* 調整導航欄 */
+    header {
+        padding: 15px;
+    }
+    
+    header .navbar a {
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    
+    /* 顯示手機菜單按鈕 */
+    #menu-bar {
+        display: block;
+    }
+    
+    /* 隱藏導航菜單，可以後續添加JavaScript來控制顯示 */
+    header .navbar {
+        display: none;
+    }
+    
+    /* 調整美食卡片容器 */
+    .menu .box-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .menu .box-container .box {
+        flex: none;
+        width: 100%;
+        height: 400px; /* 降低高度，讓整體看起來更橫向 */
+        margin-bottom: 10px;
+        position: relative;
+    }
+    
+    /* 調整美食圖片 */
+    .menu .box-container .box img {
+        height: 200px; /* 降低圖片高度，讓圖片看起來更橫向 */
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    /* 調整價格標籤 */
+    .menu .box-container .box .price {
+        font-size: 25px;
+        padding: 8px 30px;
+        top: 10px;
+        left: 10px;
+    }
+    
+    /* 調整美食名稱 */
+    .menu .box-container .box h3 {
+        font-size: 25px;
+        padding: 8px 20px;
+        margin-top: 8px;
+    }
+    
+    /* 調整星級評分 */
+    .menu .box-container .stars {
+        font-size: 18px;
+        padding: 8px;
+    }
+    
+    /* 調整首頁背景 */
+    .home {
+        min-height: 400px;
+        background-position: center;
+    }
+    
+    /* 調整按鈕 */
+    .btn {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
+    
+    /* 調整基本字體大小 */
+    * {
+        font-size: 18px;
+    }
+}
+
+/* 更小螢幕的額外調整 */
+@media (max-width: 480px) {
+    .menu .box-container .box {
+        height: 350px; /* 進一步降低高度 */
+    }
+    
+    .menu .box-container .box img {
+        height: 180px; /* 進一步降低圖片高度 */
+    }
+    
+    .heading {
+        font-size: 28px;
+        padding: 15px;
+    }
+    
+    .heading span {
+        font-size: 28px;
+    }
+    
+    .menu .box-container .box h3 {
+        font-size: 20px;
+        padding: 6px 15px;
+    }
+    
+    .menu .box-container .box .price {
+        font-size: 20px;
+        padding: 6px 20px;
+    }
+    
+    .menu .box-container .stars {
+        font-size: 16px;
+    }
 }
