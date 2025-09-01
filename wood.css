@@ -1,4 +1,4 @@
-/* 重置全局樣式 */
+/* 重置全局样式 */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* 導覽欄樣式 */
+/* 导航栏样式 */
 header {
     background-color: rgb(255, 118, 73);
     color: black;
@@ -111,7 +111,7 @@ header h1 {
 }
 
 .box img {
-    width: 75%; /* 將圖片寬度設為原來的 75% */
+    width: 75%; /* 将图片宽度设置为原始的 75% */
     height: 75%;
     border-bottom: 1px solid #ddd;
 }
@@ -140,56 +140,19 @@ header h1 {
 .footer .credit span {
     color: rgb(0, 169, 169);
 }
-
-/* 手機樣式 */
-@media (max-width: 600px) {
-    #menu-bar {
-        display: initial;
-        position: absolute;
-        right: 10px;
-        top: 20px;
-    }
-
-    header .navbar {
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        background-color: rgb(25, 100, 115);
-        border-top: 3px solid gray;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    header .navbar a {
-        display: block;
-        font-size: 22px;
-        font-weight: normal;
-        color: rgb(0, 0, 0);
-        margin: 10px;
-        padding: 6px;
-        border-left: 3px solid gray;
-        background-color: rgb(255, 255, 255);
-    }
-
-    header .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        padding: 10px;
-    }
-
-    .home .content {
-        text-align: center;
-        margin-top: 70px;
-        padding-top: 20px;
-    }
-
-    .btn {
-        width: 100%;
-        z-index: 4;
-    }
-
-    .box img {
-        width: 75%; /* 將圖片寬度設為原來的 75% */
-        height: 75%;
-        border-bottom: 1px solid #ddd;
-    }
+/* 手機 */
+/* 第一區h */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: rgb(255, 118, 73);
+    /* box-shadow: 10px 1rem 1rem black; */
+    opacity: 0.9;
 }

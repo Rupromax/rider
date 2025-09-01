@@ -178,55 +178,23 @@ section{
     font-weight: bolder;
     font-size: 30px;
 }
-.footer .credit span{
+.footer .credit span {
     color: rgb(0, 169, 169);
 }
 
 /* 手機 */
 /* 第一區h */
-@media(max-width:600px){
-    #menu-bar{
-        display: initial;
-        position: absolute;
-        right:10px;
-        top:20px;
-    } 
-     header .navbar{
-        position: absolute;
-        top:80px; left:0; right:0;
-        background-color: rgb(25, 100, 115);
-        border-top: 3px solid gray;
-        /* 隱藏下拉選單 */
-         clip-path:polygon(0 0,100% 0,100% 0,0 0);
-    } 
-
-     header .navbar a{ 
-        /* 疊起來 */
-          display: block;
-         font-size: 22px;
-         font-weight: normal;
-         color: rgb(0, 0, 0);
-         margin: 10px; padding:6px;
-         border-left: 3px solid gray;
-         background-color: rgb(255, 255, 255);
-    } 
-    /* 顯示出來 */
-     header .navbar.active{
-        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
-        padding:10px;
-    } 
-    /* 首頁圖 */
-    .home .content{
-        text-align: center;
-        margin-top: 70px;
-        padding-top: 20px;
-    }
-    .btn{
-        width: 100%;
-        z-index: 4;
-    }
-    /* 景點*/
-    .category .box-container .box{
-        flex: 1 1 auto;
-    }
-    }
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: rgb(255, 118, 73);
+    /* box-shadow: 10px 1rem 1rem black; */
+    opacity: 0.9;
+}
