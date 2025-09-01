@@ -208,13 +208,14 @@ section {
         flex-wrap: wrap;
     }
     
-    /* 顯示手機菜單按鈕 */
+    /* 顯示手機菜單按鈕 - 加強優先級 */
     #menu-bar {
-        display: block;
+        display: block !important;
         z-index: 101;
+        position: relative;
     }
     
-    /* 手機版導航菜單樣式 */
+    /* 隱藏桌面版導航菜單 */
     header .navbar {
         position: absolute;
         top: 100%;
@@ -229,7 +230,7 @@ section {
     
     /* 當菜單按鈕被點擊時顯示菜單 */
     header .navbar.active {
-        display: flex;
+        display: flex !important;
     }
     
     header .navbar a {
