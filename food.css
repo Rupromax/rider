@@ -231,37 +231,38 @@ section {
     .menu .box-container .box {
         flex: none;
         width: 100%;
-        height: 400px; /* 降低高度，讓整體看起來更橫向 */
+        height: 320px; /* 進一步降低高度，讓所有圖片都呈現橫向 */
         margin-bottom: 10px;
         position: relative;
     }
     
-    /* 調整美食圖片 */
+    /* 調整美食圖片 - 關鍵修改讓所有圖片都橫向 */
     .menu .box-container .box img {
-        height: 200px; /* 降低圖片高度，讓圖片看起來更橫向 */
+        height: 160px; /* 大幅降低圖片高度，確保橫向比例 */
         object-fit: cover;
         object-position: center;
+        width: 100%;
     }
     
     /* 調整價格標籤 */
     .menu .box-container .box .price {
-        font-size: 25px;
-        padding: 8px 30px;
-        top: 10px;
-        left: 10px;
+        font-size: 22px;
+        padding: 6px 25px;
+        top: 8px;
+        left: 8px;
     }
     
     /* 調整美食名稱 */
     .menu .box-container .box h3 {
-        font-size: 25px;
-        padding: 8px 20px;
-        margin-top: 8px;
+        font-size: 22px;
+        padding: 6px 15px;
+        margin-top: 6px;
     }
     
     /* 調整星級評分 */
     .menu .box-container .stars {
-        font-size: 18px;
-        padding: 8px;
+        font-size: 16px;
+        padding: 6px;
     }
     
     /* 調整首頁背景 */
@@ -285,11 +286,11 @@ section {
 /* 更小螢幕的額外調整 */
 @media (max-width: 480px) {
     .menu .box-container .box {
-        height: 350px; /* 進一步降低高度 */
+        height: 280px; /* 小螢幕進一步降低高度 */
     }
     
     .menu .box-container .box img {
-        height: 180px; /* 進一步降低圖片高度 */
+        height: 140px; /* 小螢幕圖片高度更低，確保橫向效果 */
     }
     
     .heading {
@@ -302,16 +303,16 @@ section {
     }
     
     .menu .box-container .box h3 {
-        font-size: 20px;
-        padding: 6px 15px;
+        font-size: 18px;
+        padding: 5px 12px;
     }
     
     .menu .box-container .box .price {
-        font-size: 20px;
-        padding: 6px 20px;
+        font-size: 18px;
+        padding: 5px 20px;
     }
     
     .menu .box-container .stars {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
