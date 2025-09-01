@@ -204,12 +204,40 @@ section{
     
     /* 顯示手機菜單按鈕 */
     #menu-bar {
-        display: block;
+        display: block !important;
+        position: relative;
+        z-index: 1001;
     }
     
-    /* 隱藏導航菜單，可以後續添加JavaScript來控制顯示 */
+    /* 隱藏導航菜單 */
     header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(255, 118, 73);
+        border-top: 1px solid rgba(0,0,0,0.1);
         display: none;
+        flex-direction: column;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    /* 顯示激活的導航菜單 */
+    header .navbar.active {
+        display: flex !important;
+    }
+    
+    header .navbar a {
+        display: block;
+        padding: 15px 25px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        font-size: 18px;
+    }
+    
+    header .navbar a:hover {
+        background-color: rgba(0,0,0,0.1);
+        margin-left: 0;
+        padding: 15px 25px;
     }
     
     /* 調整圖片容器為橫向排列 */
@@ -261,6 +289,14 @@ section{
 
 /* 更小螢幕的額外調整 */
 @media (max-width: 480px) {
+    #menu-bar {
+        display: block !important;
+    }
+    
+    header .navbar.active {
+        display: flex !important;
+    }
+    
     .gallery .box-container .box {
         height: 180px; /* 進一步降低高度 */
     }

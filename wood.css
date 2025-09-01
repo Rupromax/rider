@@ -156,3 +156,148 @@ header {
     /* box-shadow: 10px 1rem 1rem black; */
     opacity: 0.9;
 }
+
+/* 移動端響應式設計 */
+@media (max-width: 768px) {
+    /* 調整導航欄 */
+    header {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 24px;
+    }
+    
+    .navbar a {
+        font-size: 18px;
+        padding-left: 5px;
+    }
+    
+    /* 顯示手機菜單按鈕 */
+    #menu-bar {
+        display: block !important;
+        position: relative;
+        z-index: 1001;
+    }
+    
+    /* 隱藏導航菜單 */
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(255, 118, 73);
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+        flex-direction: column;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    /* 顯示激活的導航菜單 */
+    .navbar.active {
+        display: flex !important;
+    }
+    
+    .navbar a {
+        display: block;
+        padding: 15px 25px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        font-size: 16px;
+        margin-left: 0;
+    }
+    
+    .navbar a:hover {
+        background-color: rgba(0,0,0,0.1);
+        margin-left: 0;
+        padding: 15px 25px;
+    }
+    
+    /* 修正移動端內容區域 */
+    .content {
+        margin-top: 80px;
+        padding: 10px;
+    }
+    
+    /* 修正移動端圖片容器 */
+    .box {
+        flex-direction: column;
+        margin: 10px 5px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    
+    .box img {
+        width: 100% !important;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        border-bottom: 2px solid #ddd;
+    }
+    
+    .box p {
+        padding: 15px;
+        font-size: 16px;
+        text-indent: 0;
+        line-height: 1.4;
+    }
+    
+    /* 調整首頁背景 */
+    .home {
+        min-height: 400px;
+        background-position: center;
+        padding: 5px;
+    }
+    
+    /* 調整按鈕 */
+    .btn {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+    
+    /* 調整頁腳 */
+    .footer .credit {
+        font-size: 20px;
+    }
+}
+
+/* 更小螢幕的額外調整 */
+@media (max-width: 480px) {
+    #menu-bar {
+        display: block !important;
+    }
+    
+    .navbar.active {
+        display: flex !important;
+    }
+    
+    header h1 {
+        font-size: 20px;
+    }
+    
+    .content {
+        margin-top: 70px;
+        padding: 5px;
+    }
+    
+    .box {
+        margin: 8px 3px;
+    }
+    
+    .box img {
+        height: 180px;
+    }
+    
+    .box p {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .btn {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+    
+    .footer .credit {
+        font-size: 18px;
+    }
+}

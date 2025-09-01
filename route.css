@@ -251,3 +251,413 @@ header {
     /* box-shadow: 10px 1rem 1rem black; */
     opacity: 0.9;
 }
+
+/* <!-- 第一H --> */
+h1{
+    color: rgb(115, 45, 220);
+    font-size: 40px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    padding:40px;
+}
+
+.heading span{
+    font-size: 50px;
+    color: rgb(244, 42, 42);
+}
+
+header{
+    font-size: 20px;
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: rgb(255, 118, 73);
+    /* box-shadow: 10px 1rem 1rem black; */
+    opacity: 0.9;
+}
+
+header .navbar a{
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    padding-left: 10px;
+}
+
+header .navbar a:hover{
+    font-size: 30px;
+    font-weight: 900;
+    color:crimson;
+    margin-left: 10px;
+    transition: 1s;
+    background-color: rgb(0, 0, 0);
+    padding:19px 14px 19px 14px;
+}
+
+/* Font Awesome */
+#menu-bar{
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border:1px solid rgb(115, 13, 210);
+    border-radius: 5px;
+    padding:8px;
+    display:none; 
+}
+
+/* <!-- 首頁 --> */
+
+section{
+    padding:10px;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-height: 600px;
+    align-items: center;
+    background: url(img/風景3.jpg) no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.btn{
+    padding: 10px;
+    border:3px solid rgb(215, 176, 0);
+    color: rgb(215, 176, 0);
+    font-size: 25px;
+    border-radius: 10px;
+    z-index: 0;
+} 
+
+.btn:hover{
+    background-color: black;
+    color: brown;
+    box-shadow: inset 200px 0 0 0 black;
+    transition: 1.5s all;
+}
+/*  路線 */
+.box{
+    display: flex;
+    border: 3px solid rgb(47, 179, 142);
+    border-radius: 20px;
+    margin-left: 10px; 
+}
+.box2{
+    display: flex;
+    border: 3px solid rgb(233, 0, 190);
+    border-radius: 20px;
+    margin-left: 10px; 
+}
+.box3{
+    display: flex;
+    border: 3px solid rgb(0, 186, 233);
+    border-radius: 20px;
+    margin-left: 10px; 
+}
+.box4{
+    display: flex;
+    border: 3px solid rgb(43, 0, 233);
+    border-radius: 20px;
+    margin-left: 10px; 
+}
+
+.road p{
+    text-indent: 25px;
+    font-weight: bolder;
+    text-align:center;
+}
+
+.road h2{
+    text-indent: 60px;
+    color: rgb(0, 233, 233);
+    font-size: 40px;
+    font-weight: bolder;
+}
+.road h3{
+    text-indent: 60px;
+    color: rgb(233, 0, 190);
+    font-size: 40px;
+    font-weight: bolder;
+}
+.road h4{
+    text-indent: 60px;
+    color: rgb(0, 233, 151);
+    font-size: 40px;
+    font-weight: bolder;
+}
+.road h5{
+    text-indent: 60px;
+    color: rgb(43, 0, 233);
+    font-size: 40px;
+    font-weight: bolder;
+}
+.road h6{
+    text-indent: 900px;
+    color: rgb(233, 0, 117);
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.road img{
+        width: 100%;
+        max-width: 1000px;
+        height: 600px;
+       margin-left: 70px;
+}
+/* <!-- FOOT --> */
+.footer{
+    background-color:burlywood;
+    text-align: center;
+}
+.footer .socials{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.footer .credit{
+    padding: 10px;
+    color: rgb(67,67,67);
+    font-weight: bolder;
+    font-size: 30px;
+}
+.footer .credit span{
+    color: rgb(0, 169, 169);
+}
+
+/* 添加以下樣式 */
+.gallery {
+    display: flex;
+    justify-content: flex-start; /* 左對齊 */
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.box-container {
+    flex: 0 0 auto;
+    margin-right: 10px; /* 降低右邊的間距 */
+}
+
+.box {
+    overflow: hidden;
+    border: 3px solid #ddd;
+    border-radius: 20px;
+}
+
+.box img {
+    width: 75%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.content {
+    padding: 10px;
+    text-align: center;
+}
+
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #3498db;
+}
+/* 手機 */
+/* 第一區h */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: rgb(255, 118, 73);
+    /* box-shadow: 10px 1rem 1rem black; */
+    opacity: 0.9;
+}
+
+/* 手機版響應式設計 */
+@media (max-width: 768px) {
+    /* 調整標題字體大小 */
+    .heading {
+        font-size: 35px;
+        padding: 20px;
+    }
+    
+    .heading span {
+        font-size: 35px;
+    }
+    
+    /* 調整導航欄 */
+    header {
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+    
+    /* 顯示手機菜單按鈕 */
+    #menu-bar {
+        display: block !important;
+        z-index: 101;
+        position: relative;
+    }
+    
+    /* 隱藏桌面版導航菜單 */
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(255, 118, 73);
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+        flex-direction: column;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    }
+    
+    /* 當菜單按鈕被點擊時顯示菜單 */
+    header .navbar.active {
+        display: flex !important;
+    }
+    
+    header .navbar a {
+        font-size: 18px;
+        padding: 15px 25px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        display: block;
+        text-align: center;
+    }
+    
+    header .navbar a:hover {
+        background-color: rgba(0,0,0,0.1);
+        margin-left: 0;
+        padding: 15px 25px;
+    }
+    
+    /* 修復路線圖片跑版問題 */
+    .road img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
+    /* 調整路線標題縮排 */
+    .road h2, .road h3, .road h4, .road h5 {
+        text-indent: 20px;
+        font-size: 28px;
+    }
+    
+    .road h6 {
+        text-indent: 20px;
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .road p {
+        text-indent: 15px;
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    
+    /* 調整路線框架 */
+    .box, .box2, .box3, .box4 {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 15px;
+        flex-direction: column;
+    }
+    
+    /* 修復圖片庫跑版 */
+    .gallery {
+        flex-direction: column;
+        overflow-x: visible;
+    }
+    
+    .box-container {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    .box img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+    
+    .content {
+        padding: 15px;
+    }
+    
+    /* 調整首頁背景 */
+    .home {
+        min-height: 400px;
+        background-position: center;
+        padding: 20px;
+    }
+    
+    /* 調整按鈕 */
+    .btn {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
+    
+    /* 調整基本字體大小 */
+    * {
+        font-size: 18px;
+    }
+}
+
+/* 更小螢幕的額外調整 */
+@media (max-width: 480px) {
+    .road img {
+        padding: 0 5px;
+    }
+    
+    .road h2, .road h3, .road h4, .road h5, .road h6 {
+        font-size: 24px;
+        text-indent: 10px;
+    }
+    
+    .road p {
+        font-size: 16px;
+        text-indent: 10px;
+        padding: 0 5px;
+    }
+    
+    .heading {
+        font-size: 28px;
+        padding: 15px;
+    }
+    
+    .heading span {
+        font-size: 28px;
+    }
+    
+    .box, .box2, .box3, .box4 {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}

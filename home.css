@@ -305,3 +305,199 @@ header {
     /* box-shadow: 10px 1rem 1rem black; */
     opacity: 0.9;
 }
+
+/* 手機版響應式設計 */
+@media (max-width: 768px) {
+    /* 調整標題字體大小 */
+    .heading {
+        font-size: 35px;
+        padding: 20px;
+    }
+    
+    .heading span {
+        font-size: 35px;
+    }
+    
+    /* 調整導航欄 */
+    header {
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+    
+    /* 顯示手機菜單按鈕 */
+    #menu-bar {
+        display: block !important;
+        z-index: 101;
+        position: relative;
+    }
+    
+    /* 隱藏桌面版導航菜單 */
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(255, 118, 73);
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+        flex-direction: column;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    }
+    
+    /* 當菜單按鈕被點擊時顯示菜單 */
+    header .navbar.active {
+        display: flex !important;
+    }
+    
+    header .navbar a {
+        font-size: 18px;
+        padding: 15px 25px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        display: block;
+        text-align: center;
+    }
+    
+    header .navbar a:hover {
+        background-color: rgba(0,0,0,0.1);
+        margin-left: 0;
+        padding: 15px 25px;
+    }
+    
+    /* 調整景點圖片容器 - 橫向顯示 */
+    .category .box-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .category .box-container .box {
+        flex: none;
+        width: 100%;
+        height: 200px; /* 降低高度實現橫向效果 */
+        margin-bottom: 10px;
+    }
+    
+    .category .box-container .box .content {
+        height: 200px; /* 對應降低內容高度 */
+    }
+    
+    .category .box-container .box .content img {
+        height: 120px; /* 圖片橫向顯示 */
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+    
+    /* 調整美食圖片容器 - 橫向顯示 */
+    .menu .box-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .menu .box-container .box {
+        flex: none;
+        width: 100%;
+        height: 280px; /* 降低高度實現橫向效果 */
+        margin-bottom: 10px;
+    }
+    
+    .menu .box-container .box img {
+        height: 140px; /* 圖片橫向顯示 */
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+    
+    /* 調整住宿圖片容器 - 橫向顯示 */
+    .gallery .box-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .gallery .box-container .box {
+        flex: none;
+        width: 100%;
+        height: 200px; /* 降低高度實現橫向效果 */
+        margin-bottom: 10px;
+    }
+    
+    .gallery .box-container .box img {
+        height: 200px; /* 圖片橫向顯示 */
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+    
+    /* 調整價格標籤 */
+    .menu .box-container .box .price {
+        font-size: 22px;
+        padding: 6px 25px;
+        top: 8px;
+        left: 8px;
+    }
+    
+    /* 調整美食名稱 */
+    .menu .box-container .box h3 {
+        font-size: 22px;
+        padding: 6px 15px;
+        margin-top: 6px;
+    }
+    
+    /* 調整星級評分 */
+    .menu .box-container .stars {
+        font-size: 16px;
+        padding: 6px;
+    }
+    
+    /* 調整首頁背景 */
+    .home {
+        min-height: 400px;
+        background-position: center;
+    }
+    
+    /* 調整按鈕 */
+    .btn {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
+    
+    /* 調整基本字體大小 */
+    * {
+        font-size: 18px;
+    }
+}
+
+/* 更小螢幕的額外調整 */
+@media (max-width: 480px) {
+    .category .box-container .box {
+        height: 180px;
+    }
+    
+    .category .box-container .box .content img {
+        height: 100px;
+    }
+    
+    .menu .box-container .box {
+        height: 250px;
+    }
+    
+    .menu .box-container .box img {
+        height: 120px;
+    }
+    
+    .gallery .box-container .box {
+        height: 180px;
+    }
+    
+    .gallery .box-container .box img {
+        height: 180px;
+    }
+    
+    .heading {
+        font-size: 28px;
+        padding: 15px;
+    }
+    
+    .heading span {
+        font-size: 28px;
+    }
+}

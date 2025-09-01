@@ -198,3 +198,159 @@ header {
     /* box-shadow: 10px 1rem 1rem black; */
     opacity: 0.9;
 }
+
+/* 手機版響應式設計 */
+@media (max-width: 768px) {
+    /* 調整標題字體大小 */
+    .heading {
+        font-size: 35px;
+        padding: 20px;
+    }
+    
+    .heading span {
+        font-size: 35px;
+    }
+    
+    /* 調整導航欄 */
+    header {
+        padding: 15px;
+    }
+    
+    header .navbar a {
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    
+    /* 顯示手機菜單按鈕 */
+    #menu-bar {
+        display: block !important;
+        position: relative;
+        z-index: 1001;
+    }
+    
+    /* 隱藏導航菜單 */
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(255, 118, 73);
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+        flex-direction: column;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    /* 顯示激活的導航菜單 */
+    header .navbar.active {
+        display: flex !important;
+    }
+    
+    header .navbar a {
+        display: block;
+        padding: 15px 25px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        font-size: 18px;
+    }
+    
+    header .navbar a:hover {
+        background-color: rgba(0,0,0,0.1);
+        margin-left: 0;
+        padding: 15px 25px;
+    }
+    
+    /* 調整景點容器為橫向排列 */
+    .category .box-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .category .box-container .box {
+        flex: none;
+        width: 100%;
+        height: 200px; /* 降低高度，讓圖片看起來更橫向 */
+        margin-bottom: 10px;
+    }
+    
+    .category .box-container .box .content {
+        height: 200px; /* 對應容器高度 */
+        padding: 5px;
+    }
+    
+    .category .box-container .box .content img {
+        width: 100%;
+        height: 120px; /* 降低圖片高度，呈現橫向效果 */
+        object-fit: cover;
+        object-position: center;
+        margin: 0;
+    }
+    
+    /* 調整文字大小 */
+    .category .box-container .box .content h3 {
+        font-size: 20px;
+        margin: 5px 0;
+    }
+    
+    .category .box-container .box .content p {
+        font-size: 16px;
+        margin: 2px 0;
+    }
+    
+    /* 調整首頁背景 */
+    .home {
+        min-height: 400px;
+        background-position: center;
+    }
+    
+    /* 調整按鈕 */
+    .btn {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
+    
+    /* 調整基本字體大小 */
+    * {
+        font-size: 18px;
+    }
+}
+
+/* 更小螢幕的額外調整 */
+@media (max-width: 480px) {
+    #menu-bar {
+        display: block !important;
+    }
+    
+    header .navbar.active {
+        display: flex !important;
+    }
+    
+    .category .box-container .box {
+        height: 180px; /* 進一步降低高度 */
+    }
+    
+    .category .box-container .box .content {
+        height: 180px;
+        padding: 3px;
+    }
+    
+    .category .box-container .box .content img {
+        height: 100px; /* 更低的圖片高度 */
+    }
+    
+    .heading {
+        font-size: 28px;
+        padding: 15px;
+    }
+    
+    .heading span {
+        font-size: 28px;
+    }
+    
+    .category .box-container .box .content h3 {
+        font-size: 18px;
+    }
+    
+    .category .box-container .box .content p {
+        font-size: 14px;
+    }
+}
